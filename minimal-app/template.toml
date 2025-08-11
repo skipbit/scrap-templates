@@ -1,0 +1,18 @@
+[template]
+name = "minimal-app"
+version = "1.0.0"
+description = "Minimal C++ application project"
+author = "skipbit contributors"
+license = "MIT"
+min_scrap_version = "0.0.1"
+tags = ["app", "basic", "minimal"]
+
+[variables]
+# No additional variables required for minimal app
+
+[requirements]
+# Minimal requirements
+min_cpp_standard = "17"
+
+[dependencies]
+# No default dependencies for minimal app

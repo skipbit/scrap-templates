@@ -1,0 +1,47 @@
+# {{name}} - Minimal C++ Library
+
+[package]
+name = "{{name}}"
+version = "{{version}}"
+type = "lib"
+std = "23"
+authors = ["{{author}}"]
+description = "A minimal C++ library"
+license = "MIT"
+toolchain = "system"
+
+[lib]
+name = "{{name}}"
+src = "src/{{name}}.cpp"
+include_dir = "include"
+
+[build]
+# Base build configuration
+cxx_flags = ["-Wall", "-Wextra"]
+defines = []
+include_dirs = ["include"]
+
+[build.debug]
+# Debug build configuration
+cxx_flags = ["-g", "-O0"]
+defines = ["DEBUG", "_DEBUG"]
+
+[build.release]
+# Release build configuration
+cxx_flags = ["-O3", "-DNDEBUG"]
+defines = ["NDEBUG"]
+
+[test]
+# Test configuration
+framework = "scrap"  # Use built-in test framework
+discover = true
+pattern = "*_test.cpp"
+
+[format]
+# Code formatting configuration
+tool = "clang-format"
+style = "file"  # Use .clang-format file if available
+
+[check]
+# Static analysis configuration
+tool = "clang-tidy"

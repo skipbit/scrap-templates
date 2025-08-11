@@ -1,0 +1,23 @@
+[template]
+name = "minimal-lib"
+version = "1.0.0"
+description = "Minimal C++ library project"
+author = "skipbit contributors"
+license = "MIT"
+min_scrap_version = "0.0.1"
+tags = ["lib", "library", "basic", "minimal"]
+
+[variables]
+# Library namespace (defaults to project name)
+namespace = {
+    prompt = "C++ namespace",
+    default = "{{name}}",
+    transform = "snake_case"
+}
+
+[requirements]
+# Minimal requirements
+min_cpp_standard = "17"
+
+[dependencies]
+# No default dependencies for minimal library

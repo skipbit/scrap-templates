@@ -1,0 +1,45 @@
+# {{name}} - Minimal C++ Application
+
+[package]
+name = "{{name}}"
+version = "{{version}}"
+type = "app"
+std = "23"
+authors = ["{{author}}"]
+description = "A minimal C++ application"
+license = "MIT"
+toolchain = "system"
+
+[[bin]]
+name = "{{name}}"
+src = "src/main.cpp"
+
+[build]
+# Base build configuration
+cxx_flags = ["-Wall", "-Wextra"]
+defines = []
+
+[build.debug]
+# Debug build configuration
+cxx_flags = ["-g", "-O0"]
+defines = ["DEBUG", "_DEBUG"]
+
+[build.release]
+# Release build configuration
+cxx_flags = ["-O3", "-DNDEBUG"]
+defines = ["NDEBUG"]
+
+[test]
+# Test configuration (future)
+framework = "scrap"  # Use built-in test framework
+discover = true
+pattern = "*_test.cpp"
+
+[format]
+# Code formatting configuration
+tool = "clang-format"
+style = "file"  # Use .clang-format file if available
+
+[check]
+# Static analysis configuration
+tool = "clang-tidy"

@@ -1,6 +1,6 @@
 # Scrap Template Examples
 
-This directory contains example templates that demonstrate the scrap template system.
+This repository contains example templates that demonstrate the scrap template system.
 
 ## Available Templates
 
@@ -20,17 +20,7 @@ A minimal C++ library template that generates:
 
 ## Using These Templates
 
-These examples show the structure that will be used in the official `github.com/skipbit/scrap-templates` repository.
-
-### Testing Templates Locally
-
-```bash
-# Test minimal-app template
-scrap new myapp --template=./examples/templates/minimal-app
-
-# Test minimal-lib template
-scrap new mylib --type=lib --template=./examples/templates/minimal-lib
-```
+`scrap` cannot use these templates yet. `scrap new` creates a project from a template built into the tool itself, and takes no option that points at a template outside it. Until a way to distribute and select templates exists, the directories here describe the intended structure rather than feed a command.
 
 ## Template Features Demonstrated
 
@@ -64,6 +54,5 @@ Templates can include:
 1. Create a directory with your template name
 2. Add `template.toml` with metadata
 3. Add template files with placeholders
-4. Test locally with `--template=/path/to/template`
 
 For complete details about the template system, see the documentation in the main [scrap repository](https://github.com/skipbit/scrap).

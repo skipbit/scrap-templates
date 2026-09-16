@@ -9,11 +9,7 @@ tags = ["lib", "library", "basic", "minimal"]
 
 [variables]
 # Library namespace (defaults to project name)
-namespace = {
-    prompt = "C++ namespace",
-    default = "{{name}}",
-    transform = "snake_case"
-}
+namespace = { prompt = "C++ namespace", default = "{{name}}", transform = "snake_case" }
 
 [requirements]
 # Minimal requirements

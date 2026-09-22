@@ -1,11 +1,12 @@
+#include "{{name}}/{{name}}.h"
 #include <cassert>
 #include <iostream>
 #include <string>
-#include "{{name}}/{{name}}.h"
 
 using namespace {{namespace|snake_case}};
 
-int main() {
+int main()
+{
     std::cout << "Running tests for {{name}} library..." << std::endl;
 
     // Test hello() function

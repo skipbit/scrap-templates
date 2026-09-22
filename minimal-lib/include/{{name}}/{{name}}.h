@@ -14,4 +14,4 @@ const char* hello();
  */
 const char* version();
 
-} // namespace {{namespace|snake_case}}
+}  // namespace {{namespace|snake_case}}

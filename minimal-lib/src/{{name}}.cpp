@@ -2,12 +2,14 @@
 
 namespace {{namespace|snake_case}} {
 
-const char* hello() {
+const char* hello()
+{
     return "Hello from {{name}} library!";
 }
 
-const char* version() {
+const char* version()
+{
     return "{{version}}";
 }
 
-} // namespace {{namespace|snake_case}}
+}  // namespace {{namespace|snake_case}}
